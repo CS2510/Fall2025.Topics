@@ -3,7 +3,9 @@ Topics we are going to cover in class each day.
 
 # Day 01, August 25th (Lecture)
 ## Macro view of methods of drawing 
+
 - Box Model
+    - ![NY Times Cover for Pearl Harbor](https://www.nypl.org/scout/_next/image?url=https%3A%2F%2Fdrupal.nypl.org%2Fsites-drupal%2Fdefault%2Ffiles%2Fstyles%2Fmax_width_960%2Fpublic%2Fblogs%2Ff55b9a989d12b3c172d3510da17478ad.png%3Fitok%3DB3nyQ1YD&w=1920&q=90)
     - Addition information at https://www.w3schools.com/css/css_boxmodel.asp, https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
 - SVG
     - Additional information at https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML, https://www.w3schools.com/graphics/svg_intro.asp
@@ -11,8 +13,7 @@ Topics we are going to cover in class each day.
     - Additional information at https://www.w3schools.com/html/html5_canvas.asp, https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
 
 ## What we won't be doing in class
-- Images
-    - Including emoji
+- Images (Including emoji)
 - Sounds
 
 ## Methods of drawing specific to canvas
@@ -37,7 +38,7 @@ Topics we are going to cover in class each day.
   - head
   - body
   - script
-    - Additional information at [https://www.w3schools.com/tags/tag_doctype.ASP](https://www.w3schools.com/html/html_intro.asp)
+  - Additional information at [https://www.w3schools.com/tags/tag_doctype.ASP](https://www.w3schools.com/html/html_intro.asp)
 
 - Access elements in JS
   - Additional information at https://www.w3schools.com/jsref/met_document_queryselector.asp
@@ -47,7 +48,9 @@ Topics we are going to cover in class each day.
   - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
 
 ## In class work
-- Take what we have learned about drawing and draw something some advanced.
+- Take what we have learned about drawing and draw something more advanced.
+- ![Mickey Mouse Head](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5ejW-uLTRXHprPAMrWZUOFD1nWv7xpnvYw&s)
+- [Batman Logos](https://flowingdata.com/2012/12/24/evolution-of-batman-logo-1940-2012/)
 
 ## Ideas to explore on your own
 - Block out a game you enjoy using the basic drawing tools we use in class
