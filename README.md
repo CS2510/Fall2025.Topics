@@ -16,6 +16,24 @@ Topics we are going to cover in class each day.
 - Images (Including emoji)
 - Sounds
 
+## New JS concepts
+
+- Structure of an HTML document
+  - doctype
+  - html
+  - head
+  - body
+  - script
+  - Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/00_html_structure.html
+  - Additional information at https://www.w3schools.com/html/html_intro.asp
+
+- Access elements in JS
+  - Additional information at https://www.w3schools.com/jsref/met_document_queryselector.asp
+
+- Declaring variables in JS
+  - let and const
+  - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
+
 ## Methods of drawing specific to canvas
 - Showing color
   - See slides: 3 Ways to show Color
@@ -29,23 +47,9 @@ Topics we are going to cover in class each day.
 - Text
   - See slides: Fonts
   - Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text, https://www.w3schools.com/graphics/canvas_text.asp
+- Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/01_basic_drawing.html
 
-## New JS concepts
 
-- Structure of an HTML document
-  - doctype
-  - html
-  - head
-  - body
-  - script
-  - Additional information at [https://www.w3schools.com/tags/tag_doctype.ASP](https://www.w3schools.com/html/html_intro.asp)
-
-- Access elements in JS
-  - Additional information at https://www.w3schools.com/jsref/met_document_queryselector.asp
-
-- Declaring variables in JS
-  - let and const
-  - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
 
 ## In class work
 - Take what we have learned about drawing and draw something more advanced.
@@ -54,4 +58,5 @@ Topics we are going to cover in class each day.
 
 ## Ideas to explore on your own
 - Block out a game you enjoy using the basic drawing tools we use in class
+- Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/02_blocking_a_game.html, https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/03_blocking_a_game_2.html
 
