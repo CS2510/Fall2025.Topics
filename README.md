@@ -20,8 +20,6 @@ Topics we are going to cover in class each day.
 - Static members
 
 
-
-
 # Day 01, August 25th (Lecture)
 ## Macro view of methods of drawing 
 
@@ -53,6 +51,7 @@ Topics we are going to cover in class each day.
 
 - Declaring variables in JS
   - let and const
+  - Example code in [this file](./JS.html)
   - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
 
 ## Methods of drawing specific to canvas
