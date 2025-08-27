@@ -13,11 +13,48 @@ Topics we are going to cover in class each day.
 - What is the difference between the Box Model, SVG, and Canvas?
 - What is the difference between the JS keyword `let` and `const`?
 
-## What is a game?
+## Syllabus
+
+## What is a computer game?
+- In this class, a game is an enjoyable, interactive, visual simulation.
+- How are we going to learn game programming?
+  - Learn the math
+  - Learn the architecture
+  - Practice
+
+## Repeated rendering (Visual)
+- requestAnimationFrame
+  - Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame, https://www.w3schools.com/jsref/met_win_requestanimationframe.asp
+
+## Updating our game (Interactive)
+- MVC (Architecture)
+- gameLoop formalization (Architecture)
+  - Additional information at https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00, 
+
+
+
+
+## Vectors (Math)
+- What is a vector
+  - Additional information at https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)
+- Adding Vectors
+  - Additional information at https://mathworld.wolfram.com/VectorAddition.html
+
+## Physics (Math/Simulation)
+- Velocity
+  - Additional information https://en.wikipedia.org/wiki/Velocity
+
 
 ## Classes in JS
-- Class structure
-- Static members
+- classes in JS
+  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes, https://www.w3schools.com/js/js_classes.asp
+- constructors in JS
+  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor, https://www.w3schools.com/jsref/jsref_constructor_class.asp
+- class functions in JS
+- field in JS
+  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
+
+
 
 
 # Day 01, August 25th (Lecture)
