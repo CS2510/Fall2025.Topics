@@ -54,8 +54,15 @@ Topics we are going to cover in class each day.
 - field in JS
   - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
 
+## To Think About
+- Why is creative mode in Minecraft considered a game while a painting app is not?
 
+## Final Code
+- Combining classes, vectors, and our original code, we arrive at our [Day 02 Code](https://github.com/CS2510/Fall2025.Day02.GameLoop).
 
+## Ideas to explore on your own
+- Can you change the code to make all the vertices of the triangle to have their own independent velocity?
+  - Can you make the above change using arrays so that you don't need new variables for each vertex?
 
 # Day 01, August 25th (Lecture)
 ## Macro view of methods of drawing 
