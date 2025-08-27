@@ -5,6 +5,16 @@ Topics we are going to cover in class each day.
 
 [Slides from class can be seen here](https://uofnebraska-my.sharepoint.com/:f:/g/personal/17816140_nebraska_edu/EktuKJi3m_9Khf6sZLG_lrkBc46ZoPAOI6gCk86_xmf0sQ?e=sRqveC)
 
+# Day 03, September 3 (Lecture)
+
+## Announcements
+- Sprints start in 10 days
+
+## Review
+- What is a game loop?
+- What is a vector?
+
+
 # Day 02, August 27 (Lecture)
 ## Announcements
 - No class on Monday due to Labor Day
