@@ -108,10 +108,15 @@ Topics we are going to cover in class each day.
   - Example code in [this file](./JS.html)
   - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
 
+- Good Introductionary Websites in JS
+  - w3schools JS tutorials at https://www.w3schools.com/js/
+  - GeeksforGeeks JS tutorials at https://www.geeksforgeeks.org/javascript/javascript-tutorial/
+
 ## Methods of drawing specific to canvas
 - Showing color
   - See slides: 3 Ways to show Color
-  - Additional information at https://www.w3schools.com/html/html_colors.asp
+  - Additional information about named colors at https://www.w3schools.com/html/html_colors.asp
+  - Additional information about rgb and hexadecimal values at https://htmlcolorcodes.com/color-picker/
 - Paths
   - Additional information at https://www.w3resource.com/html5-canvas/html5-canvas-path.php
 - Polygons
