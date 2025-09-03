@@ -4,11 +4,39 @@ Topics we are going to cover in class each day. Links to [example student videos
 # Day 03, September 3 (Lecture)
 
 ## Announcements
-- Sprints start in 10 days
+- First self-assessment/quiz in 10 days
+- We will be "on the clock" next week.
+- Copy v transcribe (review AI)
 
 ## Review
 - What is a game loop?
 - What is a vector?
+
+## STAG
+- What pieces exist in all games? What is in a game
+  - Game-specific v Engine-specific
+  - Levels and things in those levels
+  - [Donkey Kong](https://www.retrogames.cz/play_004-Atari2600.php) v. [Sudoku](https://sudoku.com/)
+- What does everything do?
+  - Start
+  - Update
+  - Draw
+
+
+## Key Ideas Table
+|                                          | Scene        | Game Object | Component |
+| ---------------------------------------- | ------------ | ----------- | --------- |
+| Children                                 | Game Objects | Components  | N/A       |
+| Sub Class has Game-Specific Constructor? | Yes          | Yes         | No        |
+| Sub Class has Game-Specific Start/Update/Draw       | No           | No          | Yes       |
+
+## Implementation
+- Recreate Day02 game using STAG
+- Add a second kind of triangle that has a random velocity and is colored red
+
+## Other examples
+- Look at other example games in repository
+
 
 
 # Day 02, August 27 (Lecture)
