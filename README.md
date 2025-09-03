@@ -1,85 +1,126 @@
 # Fall2025.Topics
-Topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) and [slides from class](https://uofnebraska-my.sharepoint.com/:f:/g/personal/17816140_nebraska_edu/EktuKJi3m_9Khf6sZLG_lrkBc46ZoPAOI6gCk86_xmf0sQ?e=sRqveC)
+These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) and [slides from class](https://uofnebraska-my.sharepoint.com/:f:/g/personal/17816140_nebraska_edu/EktuKJi3m_9Khf6sZLG_lrkBc46ZoPAOI6gCk86_xmf0sQ?e=sRqveC)
+
+
+# Day 04, September 8 (Lecture)
+
+## 📢Announcements
+- First self-assessment/quiz in 7 days
+- We will be "on the clock" this week.
+- Copy v transcribe (review AI)
+
+## 🔙Review
+- What is a Scene v Game Object v Component
+
+## 💡New Idea: Key Ideas Table
+|                                               | Scene        | Game Object | Component |
+| --------------------------------------------- | ------------ | ----------- | --------- |
+| Children                                      | Game Objects | Components  | N/A       |
+| Sub Class has Game-Specific Constructor?      | Yes          | Yes         | No        |
+| Sub Class has Game-Specific Start/Update/Draw | No           | No          | Yes       |
 
 # Day 03, September 3 (Lecture)
 
-## Announcements
-- First self-assessment/quiz in 10 days
-- We will be "on the clock" next week.
-- Copy v transcribe (review AI)
+## 📢Announcements
+- None
 
-## Review
+## 🔙Review
 - What is a game loop?
 - What is a vector?
 
-## STAG
-- What pieces exist in all games? What is in a game
-  - Game-specific v Engine-specific
-  - Levels and things in those levels
-  - [Donkey Kong](https://www.retrogames.cz/play_004-Atari2600.php) v. [Sudoku](https://sudoku.com/)
-- What does everything do?
+
+## 💡New Idea: Engine-specific v Game Specific
+- Look at a game. For example, look at a classic [Nintendo game](https://www.retrogames.cz/play_004-Atari2600.php)
+  - What parts of the game would be in all or most games? These would be engine-specific
+  - What parts of the game are very specific to this game? These would be game-specific
+- By separating our code into engine-specific and game-specific code, we start to create an engine. This makes it easier to create games and prepares us to use a commerical game engine.  
+
+## 👩‍💻Activity
+- Go through the Day03 code and label the code as being engine-specific or game-specific
+
+## 💡New Idea: Three main functions of "things" in a game
   - Start
   - Update
   - Draw
 
+## 💡New Idea: Main Game Architectural Hierarchy
+- Scenes (also levels or stages)
+  - A scene is a collection of game objects
+- Game Objects (also actors or pawns or entities)
+  - A game object is a collection of components
+- Components (also scripts)
 
-## Key Ideas Table
-|                                          | Scene        | Game Object | Component |
-| ---------------------------------------- | ------------ | ----------- | --------- |
-| Children                                 | Game Objects | Components  | N/A       |
-| Sub Class has Game-Specific Constructor? | Yes          | Yes         | No        |
-| Sub Class has Game-Specific Start/Update/Draw       | No           | No          | Yes       |
+```mermaid
+flowchart LR
+  Scene --[Collection of]--> GameObject
+  GameObject--[Collection of]-->Component
 
-## Implementation
-- Recreate Day02 game using STAG
-- Add a second kind of triangle that has a random velocity and is colored red
+```
 
-## Other examples
-- Look at other example games in repository
+
+## 👩‍💻Activity
+- Create the files for engine-specific classes
+  - Scene
+  - GameObject
+  - Component
+- Add the start, update, and draw functions to each engine-specific class
+
+## 👩‍💻Activity
+- Create the files for game-specific classes
+  - MainScene
+  - TriangleGameObject
+  - TriangleController
+- Add the constructor, start, update, and draw functions to each game-specific class
+- Rewrite the code so that the html code uses these new classes (see Final code section below).
+
+## 🤔To Think About
+- Can you add a second kind triangle that has a random velocity and is colored red using this architecture?
+
+## 🏁Final Code
+- This is the link for [the final code we generated on Day03](https://github.com/CS2510/Fall2025.Day03.GameEngine)
+- You can see two other example games using the same architecture in the [other games Day03 repository](https://github.com/CS2510/Fall2025.Day03.OtherExamples)
 
 
 
 # Day 02, August 27 (Lecture)
-## Announcements
+## 📢Announcements
 - No class on Monday due to Labor Day
 
-## Review
+## 🔙Review
 - What is the difference between the Box Model, SVG, and Canvas?
 - What is the difference between the JS keyword `let` and `const`?
 
 ## Syllabus
 
-## What is a computer game?
+## 💡New Idea: What is a computer game?
 - In this class, a game is an enjoyable, interactive, visual simulation.
 - How are we going to learn game programming?
   - Learn the math
   - Learn the architecture
   - Practice
 
-## Repeated rendering (Visual)
+## 💡New Idea: Repeated rendering (Visual)
 - requestAnimationFrame
   - Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame, https://www.w3schools.com/jsref/met_win_requestanimationframe.asp
 
-## Updating our game (Interactive)
+## 💡New Idea: Updating our game (Interactive)
 - MVC (Architecture)
 - gameLoop formalization (Architecture)
   - Additional information at https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00, 
 
 
-
-
-## Vectors (Math)
+## 💡New Idea: Vectors (Math)
 - What is a vector
   - Additional information at https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)
 - Adding Vectors
   - Additional information at https://mathworld.wolfram.com/VectorAddition.html
 
-## Physics (Math/Simulation)
+## 💡New Idea: Physics (Math/Simulation)
 - Velocity
   - Additional information https://en.wikipedia.org/wiki/Velocity
 
 
-## Classes in JS
+## 💡New Idea: Classes in JS
 - classes in JS
   - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes, https://www.w3schools.com/js/js_classes.asp
 - constructors in JS
@@ -88,10 +129,14 @@ Topics we are going to cover in class each day. Links to [example student videos
 - field in JS
   - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
 
-## To Think About
+## 👩‍💻Activity
+- Create a simple bouncing triangle simulation using a new Vector2 class. (See Final Code section.)
+
+
+## 🤔To Think About
 - Why is creative mode in Minecraft considered a game while a painting app is not?
 
-## Final Code
+## 🏁Final Code
 - Combining classes, vectors, and our original code, we arrive at our [Day 02 Code](https://github.com/CS2510/Fall2025.Day02.GameLoop).
 
 ## Ideas to explore on your own
@@ -99,7 +144,14 @@ Topics we are going to cover in class each day. Links to [example student videos
   - Can you make the above change using arrays so that you don't need new variables for each vertex?
 
 # Day 01, August 25th (Lecture)
-## Macro view of methods of drawing 
+
+## 📢Announcements
+- Welcome to class
+
+## Review
+- None
+  
+## 💡New Idea: Macro view of methods of drawing 
 
 - Box Model
     - ![NY Times Cover for Pearl Harbor](https://www.nypl.org/scout/_next/image?url=https%3A%2F%2Fdrupal.nypl.org%2Fsites-drupal%2Fdefault%2Ffiles%2Fstyles%2Fmax_width_960%2Fpublic%2Fblogs%2Ff55b9a989d12b3c172d3510da17478ad.png%3Fitok%3DB3nyQ1YD&w=1920&q=90)
@@ -113,7 +165,7 @@ Topics we are going to cover in class each day. Links to [example student videos
 - Images (Including emoji)
 - Sounds
 
-## New JS concepts
+## 💡New Idea: New JS concepts
 
 - Structure of an HTML document
   - doctype
@@ -136,7 +188,7 @@ Topics we are going to cover in class each day. Links to [example student videos
   - w3schools JS tutorials at https://www.w3schools.com/js/
   - GeeksforGeeks JS tutorials at https://www.geeksforgeeks.org/javascript/javascript-tutorial/
 
-## Methods of drawing specific to canvas
+## 💡New Idea: Methods of drawing specific to canvas
 - Showing color
   - See slides: 3 Ways to show Color
   - Additional information about named colors at https://www.w3schools.com/html/html_colors.asp
@@ -154,12 +206,14 @@ Topics we are going to cover in class each day. Links to [example student videos
 
 
 
-## In class work
+## 👩‍💻Activity
 - Take what we have learned about drawing and draw something more advanced.
 - ![Mickey Mouse Head](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5ejW-uLTRXHprPAMrWZUOFD1nWv7xpnvYw&s)
 - [Batman Logos](https://flowingdata.com/2012/12/24/evolution-of-batman-logo-1940-2012/)
 
-## Ideas to explore on your own
+## 🤔To Think About
 - Block out a game you enjoy using the basic drawing tools we use in class
+
+## 🏁Final Code
 - Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/02_blocking_a_game.html, https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/03_blocking_a_game_2.html
 
