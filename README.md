@@ -12,6 +12,23 @@ These are the topics we are going to cover in class each day. Links to [example 
 ## 🔙Review
 - What is a Scene v Game Object v Component
 
+## Activity
+- Add an additional triangle to the Day 03 code using Game Objects and Components
+
+## New Idea: Keyboard Input
+- How is input handled by the computer
+- How can we capture keyboard changes
+
+## Activity: Keyboard Input
+- How can we move a game object based on the keyboard
+
+## New Idea: Mouse Input
+- How is mouse input handled by the computer
+- How can we capture mouse input?
+
+## Activity: Mouse Input
+- Move a game object using the mouse.
+
 ## 💡New Idea: Key Ideas Table
 |                                               | Scene        | Game Object | Component |
 | --------------------------------------------- | ------------ | ----------- | --------- |
