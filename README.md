@@ -52,6 +52,19 @@ These are the topics we are going to cover in class each day. Links to [example 
   - 🔗Additional information available at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign and https://www.w3schools.com/jsref/jsref_object_assign.asp
 
 
+## 👩‍💻Activity: Reusing components
+- Watch a game
+- Think about which components can be reused among the game objects.
+
+
+## 🤔To Think About
+- What scenes, game objects, and components will you need in your game?
+
+## 🏁Final Code
+- [The final code from Day05](https://github.com/CS2510/Fall2025.Day05.Transforms)
+
+
+
 <br/><br/>
 ---
 ---
