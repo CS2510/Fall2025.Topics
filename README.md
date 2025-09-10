@@ -1,28 +1,63 @@
 # Fall2025.Topics
 These are the topics we are going to cover in class each day. Links to [example student videos ](https://www.youtube.com/playlist?list=PLH9qo0GKu2iSlchbSeksN18S87gMIjHOg) and [slides from class](https://uofnebraska-my.sharepoint.com/:f:/g/personal/17816140_nebraska_edu/EktuKJi3m_9Khf6sZLG_lrkBc46ZoPAOI6gCk86_xmf0sQ?e=sRqveC)
 
-
-# Day 04, September 8 (Lecture)
+<br/><br/>
+---
+---
+# Day 05, September 10 (Lecture)
 
 ## 📢Announcements
-- First self-assessment/quiz in 7 days
-- We will be "on the clock" this week.
-- Copy v transcribe (review AI)
+- Upcoming sprint
+  - Study an existing game (write down what you learn)
+  - Follow a JS tutorial
+  - Start working on your own game
+  
+## 👩‍💻Activity: Talk about what you are doing/will do during your sprint
+- If you don't know, talk to the professor
 
 ## 🔙Review
-- What is a Scene v Game Object v Component
+- Fix movement bug from Day 04 (use getters in Vector2)
+  - 🔗Additional information available at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get and https://www.w3schools.com/js/js_object_accessors.asp
 
-## Activity
-- Add an additional triangle to the Day 03 code using Game Objects and Components
+## 💡New Idea: Components track their parent game object
+- When we add components to a game object, we need to track which game object is their parent
+- Components have a `gameObject` field
+  - 🔗Additional information available at https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Component-gameObject.html
+- Game objects add components through a `addComponent` function
+- We pass a reference to a component's class instead of using an new instance of the class
 
-## New Idea: Keyboard Input
-- How is input handled by the computer
-- How can we capture keyboard changes
 
-## Activity: Keyboard Input
-- How can we move a game object based on the keyboard
+## 💡New Idea: Transforms
+- All game objects have a position, rotation, and scale
+  - 🔗Additional information available at https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Transform.html
+- Add a transform component in the game object constructor
+- Use getters to easily access the transform from components
+  - 🔗Additional information available at https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Component-transform.html
+- Use the transform when rendering
 
-## New Idea: Mouse Input
+## 💡New Idea: Instantiate in scenes
+- We set the position and rotation of game objects in scenes
+- We add game objects using a custom `instantiate` function
+- We don't set the transform in a component's `start`
+
+## 💡New Idea: Draw Polygons in an Engine-Level Component
+- So many game objects need to be drawn, we don't need to keep repeating drawing code
+- Add a new `Polygon` component to the engine folder
+- This component draws based on the transform (including scale) and a set of points
+
+## 💡New Idea: Set values in `addComponent`
+- We want to set custom values on components in game objects
+- This supports reusability
+- We will use JS's `Object.assign` function
+  - 🔗Additional information available at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign and https://www.w3schools.com/jsref/jsref_object_assign.asp
+
+## 💡New Idea: Show Text
+- Explore the `fillText` function
+  - Additional information available at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText and https://www.w3schools.com/jsref/canvas_filltext.asp
+  - 🛝See slides on fonts
+
+
+## 💡New Idea: Mouse Input
 - How is mouse input handled by the computer
 - How can we capture mouse input?
 
@@ -35,6 +70,47 @@ These are the topics we are going to cover in class each day. Links to [example 
 | Children                                      | Game Objects | Components  | N/A       |
 | Sub Class has Game-Specific Constructor?      | Yes          | Yes         | No        |
 | Sub Class has Game-Specific Start/Update/Draw | No           | No          | Yes       |
+
+<br/><br/>
+---
+---
+
+# Day 04, September 8 (Lecture)
+
+## 📢Announcements
+- First self-assessment/quiz in 7 days
+- We will be "on the clock" this week.
+- Copy v transcribe (review AI)
+
+## 🔙Review
+- What is a Scene v Game Object v Component
+
+## 👩‍💻Activity: Code on your own -> Add a new game object
+- Add an additional triangle to the Day 03 code using Game Objects and Components
+- 🔗[Detailed instructions here](https://github.com/CS2510/Fall2025.Day04.Input/blob/main/TODO.md)
+
+## 💡New Idea: Keyboard Input
+- How is input handled by the computer?
+```mermaid
+flowchart TD
+  requestAnimationFrame-->input[Handle Input]-->requestAnimationFrame2[requestAnimationFrame]-->input2[Handle Input]
+```
+- How can we capture keyboard changes?
+- 🛝See slides on Input
+
+## 👩‍💻Activity: Keyboard Input
+- Move a game object on the screen based on keyboard input
+- See final code
+
+## 🤔To Think About
+- Why do many games use a combination of inputs, e.g. mouse and keyboard instead of just keyboard or mouse?
+
+## 🏁Final Code
+- [The final code from Day04](https://github.com/CS2510/Fall2025.Day04.Input)
+
+<br/><br/>
+---
+---
 
 # Day 03, September 3 (Lecture)
 
@@ -95,9 +171,11 @@ flowchart LR
 
 ## 🏁Final Code
 - This is the link for [the final code we generated on Day03](https://github.com/CS2510/Fall2025.Day03.GameEngine)
-- You can see two other example games using the same architecture in the [other games Day03 repository](https://github.com/CS2510/Fall2025.Day03.OtherExamples)
+- 🔗You can see two other example games using the same architecture in the [other games Day03 repository](https://github.com/CS2510/Fall2025.Day03.OtherExamples)
 
-
+<br/><br/>
+---
+---
 
 # Day 02, August 27 (Lecture)
 ## 📢Announcements
@@ -118,33 +196,33 @@ flowchart LR
 
 ## 💡New Idea: Repeated rendering (Visual)
 - requestAnimationFrame
-  - Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame, https://www.w3schools.com/jsref/met_win_requestanimationframe.asp
+  - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Window/requestAnimationFrame, https://www.w3schools.com/jsref/met_win_requestanimationframe.asp
 
 ## 💡New Idea: Updating our game (Interactive)
 - MVC (Architecture)
 - gameLoop formalization (Architecture)
-  - Additional information at https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00, 
+  - 🔗Additional information at https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00, 
 
 
 ## 💡New Idea: Vectors (Math)
 - What is a vector
-  - Additional information at https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)
+  - 🔗Additional information at https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)
 - Adding Vectors
-  - Additional information at https://mathworld.wolfram.com/VectorAddition.html
+  - 🔗Additional information at https://mathworld.wolfram.com/VectorAddition.html
 
 ## 💡New Idea: Physics (Math/Simulation)
 - Velocity
-  - Additional information https://en.wikipedia.org/wiki/Velocity
+  - 🔗Additional information https://en.wikipedia.org/wiki/Velocity
 
 
 ## 💡New Idea: Classes in JS
 - classes in JS
-  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes, https://www.w3schools.com/js/js_classes.asp
+  - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes, https://www.w3schools.com/js/js_classes.asp
 - constructors in JS
-  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor, https://www.w3schools.com/jsref/jsref_constructor_class.asp
+  - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor, https://www.w3schools.com/jsref/jsref_constructor_class.asp
 - class functions in JS
 - field in JS
-  - Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
+  - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields
 
 ## 👩‍💻Activity
 - Create a simple bouncing triangle simulation using a new Vector2 class. (See Final Code section.)
@@ -160,23 +238,27 @@ flowchart LR
 - Can you change the code to make all the vertices of the triangle to have their own independent velocity?
   - Can you make the above change using arrays so that you don't need new variables for each vertex?
 
+<br/><br/>
+---
+---
+
 # Day 01, August 25th (Lecture)
 
 ## 📢Announcements
 - Welcome to class
 
-## Review
+## 🔙Review
 - None
   
 ## 💡New Idea: Macro view of methods of drawing 
 
 - Box Model
     - ![NY Times Cover for Pearl Harbor](https://www.nypl.org/scout/_next/image?url=https%3A%2F%2Fdrupal.nypl.org%2Fsites-drupal%2Fdefault%2Ffiles%2Fstyles%2Fmax_width_960%2Fpublic%2Fblogs%2Ff55b9a989d12b3c172d3510da17478ad.png%3Fitok%3DB3nyQ1YD&w=1920&q=90)
-    - Addition information at https://www.w3schools.com/css/css_boxmodel.asp, https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
+    - 🔗Addition information at https://www.w3schools.com/css/css_boxmodel.asp, https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model
 - SVG
-    - Additional information at https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML, https://www.w3schools.com/graphics/svg_intro.asp
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/SVG/Guides/SVG_in_HTML, https://www.w3schools.com/graphics/svg_intro.asp
 - Canvas
-    - Additional information at https://www.w3schools.com/html/html5_canvas.asp, https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+    - 🔗Additional information at https://www.w3schools.com/html/html5_canvas.asp, https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
 
 ## What we won't be doing in class
 - Images (Including emoji)
@@ -191,15 +273,15 @@ flowchart LR
   - body
   - script
   - Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/00_html_structure.html
-  - Additional information at https://www.w3schools.com/html/html_intro.asp
+  - 🔗Additional information at https://www.w3schools.com/html/html_intro.asp
 
 - Access elements in JS
-  - Additional information at https://www.w3schools.com/jsref/met_document_queryselector.asp
+  - 🔗Additional information at https://www.w3schools.com/jsref/met_document_queryselector.asp
 
 - Declaring variables in JS
   - let and const
   - Example code in [this file](./JS.html)
-  - Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
+  - 🔗Additional information at https://www.geeksforgeeks.org/javascript/difference-between-var-let-and-const-keywords-in-javascript/
 
 - Good Introductionary Websites in JS
   - w3schools JS tutorials at https://www.w3schools.com/js/
@@ -208,17 +290,17 @@ flowchart LR
 ## 💡New Idea: Methods of drawing specific to canvas
 - Showing color
   - See slides: 3 Ways to show Color
-  - Additional information about named colors at https://www.w3schools.com/html/html_colors.asp
-  - Additional information about rgb and hexadecimal values at https://htmlcolorcodes.com/color-picker/
+  - 🔗Additional information about named colors at https://www.w3schools.com/html/html_colors.asp
+  - 🔗Additional information about rgb and hexadecimal values at https://htmlcolorcodes.com/color-picker/
 - Paths
-  - Additional information at https://www.w3resource.com/html5-canvas/html5-canvas-path.php
+  - 🔗Additional information at https://www.w3resource.com/html5-canvas/html5-canvas-path.php
 - Polygons
 - Rectangles
 - Arcs
     - Introduction to radians
 - Text
   - See slides: Fonts
-  - Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text, https://www.w3schools.com/graphics/canvas_text.asp
+  - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text, https://www.w3schools.com/graphics/canvas_text.asp
 - Example code at https://github.com/CS2510/Fall2025.Day01.Introduction/blob/main/01_basic_drawing.html
 
 
