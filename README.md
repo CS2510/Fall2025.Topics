@@ -4,7 +4,24 @@ These are the topics we are going to cover in class each day. Links to [example 
 <br/><br/>
 ---
 ---
-# Day 05, September 10 (Lecture)
+
+# Day 06, September 15 - Engine Class, Instantiate (👟Sprint)
+
+## 🔙Review
+- Time outside of class means times in front of the keyboard coding
+- Working inside another engine does not count toward this class
+
+## 👩‍💻Activity:
+- Move the code in our html file into a new Engine class
+- Call instantiate to create new game objects as needed
+
+## 🏁Final Code
+ - [The final code for today](https://github.com/CS2510/Fall2025.Day06.EngineClass)
+<br/><br/>
+---
+---
+
+# Day 05, September 10 - Transforms (🧑‍🏫Lecture)
 
 ## 📢Announcements
 - Upcoming sprint
@@ -69,7 +86,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 04, September 8 (Lecture)
+# Day 04, September 8 - Keyboard Input (🧑‍🏫Lecture)
 
 ## 📢Announcements
 - First self-assessment/quiz in 7 days
@@ -106,7 +123,7 @@ flowchart TD
 ---
 ---
 
-# Day 03, September 3 (Lecture)
+# Day 03, September 3 - Standard Architecture for Games (🧑‍🏫Lecture)
 
 ## 📢Announcements
 - None
@@ -171,7 +188,7 @@ flowchart LR
 ---
 ---
 
-# Day 02, August 27 (Lecture)
+# Day 02, August 27 - Game Loop (🧑‍🏫Lecture)
 ## 📢Announcements
 - No class on Monday due to Labor Day
 
@@ -236,7 +253,7 @@ flowchart LR
 ---
 ---
 
-# Day 01, August 25th (Lecture)
+# Day 01, August 25th - Introduction (🧑‍🏫Lecture)
 
 ## 📢Announcements
 - Welcome to class
