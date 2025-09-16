@@ -5,6 +5,68 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 07 - September 17 - Collisions 1 (Lecture/Sprint)
+
+## 📢Announcements
+
+## 🔙Review
+- What is a scene?
+- What is a game object?
+- What is a component?
+
+## 💡New Idea: Drawing Text
+
+
+## 💡New Idea: Component/Component Communication
+- Use when two components on the same game object need to communicate
+
+## 💡New Idea: Named Game Objects
+
+## 💡New Idea: Game Object/Game Object Communication
+- Use when two components in the same scene but different game objects need to communicate
+
+## 💡New Idea: Vector 2 subtraction and magnitude
+
+
+
+## 💡New Idea: Defining Polygons with Points
+
+
+
+
+## 💡New Idea: Removing game objects
+- Destroy a game object by marking it for delete
+- We don't immediately destroy game objects to prevent race conditions
+   - 🛝See slides on Deleting Objects
+
+
+## 💡New Idea: Tracking the mouse
+- Mouse events
+  - 🛝See slides on Input
+  - mousemove
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
+  - mousedown
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event
+  - mouseup
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
+- What is the order of the buttons on a mouse?
+
+
+
+## 👩‍💻Activity: Create a click-to-destroy game
+
+
+## 🧭Ideas to explore on your own
+- Are there ways to make this collision detection faster?
+- How would you detect collisions between non-convex (concave) polygons?
+
+
+## 🏁Final Code
+ - [The final code for today](https://github.com/cs2510/Fall2025.Day07.Collisions)
+<br/><br/>
+---
+---
+
 # Day 06, September 15 - Engine Class, Instantiate (👟Sprint)
 
 ## 🔙Review
@@ -14,6 +76,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ## 👩‍💻Activity:
 - Move the code in our html file into a new Engine class
 - Call instantiate to create new game objects as needed
+  - 🛝See slides on Starting Objects
 
 ## 🏁Final Code
  - [The final code for today](https://github.com/CS2510/Fall2025.Day06.EngineClass)
