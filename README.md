@@ -5,64 +5,69 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 07 - September 17 - Collisions 1 (Lecture/Sprint)
+# Day 07 - September 17 - Collisions 1 (Lecture)
 
-## 📢Announcements
+## ~~📢Announcements~~
+
+![Scene showing a city block made out of Lego bricks. Visible are several people made of mini figures, a limousine, a helicopter, and several buildings.](https://www.lego.com/cdn/cs/aboutus/assets/bltb5024e54b3d1d68b/PINPEP-LEGO0020.jpg)
 
 ## 🔙Review
-- What is a scene?
-- What is a game object?
-- What is a component?
+- Think about a scene made out of Lego bricks
+  - What is similar to a component? (The individual Lego bricks)
+  - What is similar to a scene? (The placement of the individual models.)
+  - What is similar to a game object? (The models made out of individual components.)
 
-## 💡New Idea: Drawing Text
-
-
-## 💡New Idea: Component/Component Communication
-- Use when two components on the same game object need to communicate
-
-## 💡New Idea: Named Game Objects
-
-## 💡New Idea: Game Object/Game Object Communication
-- Use when two components in the same scene but different game objects need to communicate
-
-## 💡New Idea: Vector 2 subtraction and magnitude
-
+| Scene| Game Object | Components|
+|---|---|---|
+| A collection of game objects with their position and rotation | A collection of components with a scale| The fundamental game-specific code|
+| Everything defined in the constructor | Everything defined in the constructor| Nothing in the constructor, use `start`, `update`, and `draw`.|
 
 
 ## 💡New Idea: Defining Polygons with Points
+- We don't want to have to create a new component each time we want a polygon of a different shape. If we add a `points` variable to our `Polygon` component, we can loop over those points when we draw. We can also update the points in the `Polygon` in the constructor of a game object, customizing it for each game object.
 
+## 👩‍💻Activity: Using `Polygon` for different shapes
+- Take our space shooter game and change the shape of the objects while using the same `Polygon` component.
 
+## 💡New Idea: Vector Multiplication
+$$ v\ times\ s = (v_x*s, v_y*s)$$
+$$ v_1\ scale\ v_2=(v_{1x}*v_{2x}, v_{1y}*v_{2y})$$
+$$ v_1\ dot\ v_2=v_{1x}*v_{2x}+v_{1y}*v_{2y}$$
 
+- We use `times` when we want to scale a vector by a single number (a scalar). For example, if I want to make a polygon twice as large in all directions, I would multiply each point in the polygon by one number using `times`
+- We use `scale` when we want to scale a vector by another, non-uniform vector. For example,  if I want to make a square a rectangle, I would multiple each point in the square by a non-uniform vector using `scale`. The `scale` function is similar to the mathematical idea of component-wise multiplication.
+- We use `dot` when we need to find the similarity between two vectors or project one vector onto another vector. For example, if I want to know if the heading of an enemy is nearly the same direction as the heading toward the player, I would multiple those two vectors using `dot`. As another example, if I want to project vector 1 on vector 2, I would multiple those two vectors using `dot`.
+  - When two vectors have an identical heading, their dot product is 1. If there are orthogonal, their dot product is 0. If they are pointing in opposite directions, then the dot product will be -1.
+  - Additional information can be found here: https://en.wikipedia.org/wiki/Dot_product
+
+## 👩‍💻Activity: Multiply the movement of objects by a speed
+- Use `times` to make objects move further or shorter every frame.
+- Use a boolean value to let a space ship fire on alternating sides.
+
+  
 
 ## 💡New Idea: Removing game objects
 - Destroy a game object by marking it for delete
 - We don't immediately destroy game objects to prevent race conditions
    - 🛝See slides on Deleting Objects
 
+## 👩‍💻Activity: Remove lasers when they are off screen
+- To prevent the game from overloading, we can remove lasers when they are off the screen.
 
-## 💡New Idea: Tracking the mouse
-- Mouse events
-  - 🛝See slides on Input
-  - mousemove
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-  - mousedown
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event
-  - mouseup
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
-- What is the order of the buttons on a mouse?
+## 💡New Idea: Setting up frame-rate independent behavior
+- Anytime we move anything, we should multiply by `Time.deltaTime`. If `Time.deltaTime` is updated based on the time between frames, then the behavior of the game should be independent of the speed of the machine.
+
+## 👩‍💻Activity: Multiply all movement by `Time.deltaTime`
+- This allows us to define all motion in terms of pixels/second.
+- When we add a camera, we can move to feet/second or meters/second.
 
 
-
-## 👩‍💻Activity: Create a click-to-destroy game
-
-
-## 🧭Ideas to explore on your own
-- Are there ways to make this collision detection faster?
-- How would you detect collisions between non-convex (concave) polygons?
-
+## 💡New Idea: Named Game Objects
+- In order to find game objects in a scene, we give each game object a name.
+  - [To see more about how `name` is used in Unity, you can review the documentation here](https://docs.unity3d.com/6000.2/Documentation/ScriptReference/Object-name.html)
 
 ## 🏁Final Code
- - [The final code for today](https://github.com/cs2510/Fall2025.Day07.Collisions)
+ - [The final code for today](https://github.com/CS2510/Fall2025.Day07.CollisionsPrep)
 <br/><br/>
 ---
 ---
