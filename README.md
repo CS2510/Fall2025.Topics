@@ -30,7 +30,8 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Take our space shooter game and change the shape of the objects while using the same `Polygon` component.
 
 ## 💡New Idea: Vector Multiplication
-$$ v\ times\ s = (v_x*s, v_y*s)$$
+
+$$ v\ times\ s = (v_{x}*s, v_{y}*s)$$
 $$ v_1\ scale\ v_2=(v_{1x}*v_{2x}, v_{1y}*v_{2y})$$
 $$ v_1\ dot\ v_2=v_{1x}*v_{2x}+v_{1y}*v_{2y}$$
 
