@@ -1,4 +1,4 @@
-# Day xx - xxx (Lecture/Sprint)
+# Day xx - MMMM dd - xxx (Lecture/Sprint)
 
 ## 📢Announcements
 

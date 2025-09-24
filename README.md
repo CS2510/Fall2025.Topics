@@ -5,6 +5,57 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+
+# Day 09 - September 24 - Collisions 2 (Lecture)
+
+## ~~📢Announcements~~n
+
+## 🔙Review
+- Fix `start` code from before
+- Reminder to only use the `Polygon` component, not rectangles or circles
+
+## 💡New Idea: Orthogonal Vectors
+- Two vectors are orthogonal if their dot product is 0. 
+- This is the same as having a 90 degree angle between them
+- In 2D, the vector (x,y) is orthogonal to (-y, x) and (y, -x)
+- 
+## 💡New Idea: Collider Components
+- We use collider components to identify which game objects need to have collision detection done
+- In this course the collider component is empty
+- In commerical game engines, a collider may provide a simplified version of a polygon to speed up collisions
+
+## 👩‍💻Activity: Code the Separate Axis Theorem
+- Are there any games that don't have any collisions?
+  - Word games like hangman or Wordle
+  - Text-based adventures
+- Almost all games do, especially if there any any buttons to push anywhere.
+
+## 💡New Idea: Separate Axis Theorem
+- Two convert polygons are not in collision if you can draw a straight line (axis) between them
+- If there is a line where the projections of the two polygons don't overlap, then the are not in collision
+- We only need to check a finite number of lines:
+  - The lines who tangents are orthogonal to each pair of points in the polygons
+- This algorithm does not work for concave polygons
+
+## 👩‍💻Activity: Code the Separate Axis Theorem
+
+
+## 🧭Ideas to explore on your own
+- How could we use the separate axis theorem on concave objects?
+- How could we speed up the separate axis theorem?
+
+
+## 🏁Final Code
+ - [The final code for today](https://github.com/cs2510/Fall2025.Day09.Collisions)
+<br/><br/>
+---
+---
+
+# Day 07 - September 22 - Sprint
+<br/><br/>
+---
+---
+
 # Day 07 - September 17 - Collisions 1 (Lecture)
 
 ## ~~📢Announcements~~
