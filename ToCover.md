@@ -4,12 +4,7 @@
   - 🛝See slides on fonts
 
 
-## 💡New Idea: Mouse Input
-- How is mouse input handled by the computer
-- How can we capture mouse input?
 
-## Activity: Mouse Input
-- Move a game object using the mouse.
 
 ## 💡New Idea: Key Ideas Table
 |                                               | Scene        | Game Object | Component |
@@ -19,27 +14,4 @@
 | Sub Class has Game-Specific Start/Update/Draw | No           | No          | Yes       |
 
 
-## 💡New Idea: Drawing Text
 
-## 💡New Idea: Component/Component Communication
-- Use when two components on the same game object need to communicate
-
-## 💡New Idea: Game Object/Game Object Communication
-- Use when two components in the same scene but different game objects need to communicate
-
-## 💡New Idea: Vector 2 subtraction and magnitude
-
-## 💡New Idea: Tracking the mouse
-- Mouse events
-  - 🛝See slides on Input
-  - mousemove
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-  - mousedown
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event
-  - mouseup
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
-- What is the order of the buttons on a mouse?
-
-
-
-## 👩‍💻Activity: Create a click-to-destroy game

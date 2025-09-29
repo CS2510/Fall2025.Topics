@@ -5,8 +5,68 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 11 - October 1 - Mouse and Gravity (🧑‍🏫Lecture)
 
-# Day 09 - September 24 - Collisions 2 (Lecture)
+## 📢Announcements
+
+## 🔙Review
+
+## 💡New Idea: Show Text
+- Explore the `fillText` function
+  - Additional information available at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText and https://www.w3schools.com/jsref/canvas_filltext.asp
+  - 🛝See slides on fonts
+
+## 💡New Idea: Mouse Input
+- How is mouse input handled by the computer
+- How can we capture mouse input?
+
+## 💡New Idea: Gravity
+
+
+## 👩‍💻Activity: Mouse Input
+- Move a game object using the mouse.
+
+## 💡New Idea: Component/Component Communication
+- Use when two components on the same game object need to communicate
+
+## 💡New Idea: Game Object/Game Object Communication
+- Use when two components in the same scene but different game objects need to communicate
+
+## 💡New Idea: Vector 2 subtraction and magnitude
+
+## 💡New Idea: Tracking the mouse
+- Mouse events
+  - 🛝See slides on Input
+  - mousemove
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
+  - mousedown
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event
+  - mouseup
+    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
+- What is the order of the buttons on a mouse?
+
+## 👩‍💻Activity: Create a click-to-destroy game
+
+
+## 🧭Ideas to explore on your own
+- HTML has support for gamepads if one is plugged in. You can explore this if it is your preferred method of input.
+- Should games always follow the exact laws of physics? If not, how should you communicate to your player that the rules are different?
+
+
+## [🏁Final Code](https://github.com/cs2510/Fall2025.Day11.Gravity)
+<br/><br/>
+---
+---
+
+
+# Day 10 - September 29 - 👟Sprint
+<br/><br/>
+---
+---
+
+
+
+# Day 09 - September 24 - Collisions 2 (🧑‍🏫Lecture)
 
 ## ~~📢Announcements~~n
 
@@ -51,12 +111,12 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 07 - September 22 - Sprint
+# Day 07 - September 22 - 👟Sprint
 <br/><br/>
 ---
 ---
 
-# Day 07 - September 17 - Collisions 1 (Lecture)
+# Day 07 - September 17 - Collisions 1 (🧑‍🏫Lecture)
 
 ## ~~📢Announcements~~
 
