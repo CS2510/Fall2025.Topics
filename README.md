@@ -5,6 +5,18 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+
+# Day 12 - October 6 (👟Sprint)
+
+## Ideas for Platformers
+- Be creative. Maybe you can grab the side of walls like in the original [NES Batman Game](https://www.youtube.com/watch?v=jMwksWSsfW4)
+- Fix a [bug in our collision code](https://github.com/CS2510/Fall2025.Day11.Gravity/blob/c7d44cf8bdfd83d5321bb389ef239d3dd6fbb836/platformer.html#L87)
+- Talk about making movement feel natural by accelerating in x and adding a terminal velocity in y.
+<br/><br/>
+---
+---
+
+
 https://www.youtube.com/watch?v=jMwksWSsfW4
 
 ![A shuttle launch](shuttle.jpg)
