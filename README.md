@@ -5,52 +5,45 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 11 - October 1 - Mouse and Gravity (🧑‍🏫Lecture)
+https://www.youtube.com/watch?v=jMwksWSsfW4
 
-## 📢Announcements
+![A shuttle launch](shuttle.jpg)
+# Day 11 - October 1 - RigidBody and  Collision Resolution (🧑‍🏫Lecture)
 
-## 🔙Review
+## 💡New Idea: Collision Detection Implementation
+- Previously we implemented the separate axis theorem
+- Update the game engine so it checks for collisions as part of the game loop
+- When there is an overlap, call `onCollisionEnter` for both game objects
 
-## 💡New Idea: Show Text
-- Explore the `fillText` function
-  - Additional information available at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText and https://www.w3schools.com/jsref/canvas_filltext.asp
-  - 🛝See slides on fonts
+## 👩‍💻Activity: Add Collision Detection to our Space Shooter
+- Add `onCollisionEnter` to our enemy ships
+- Check to see if the colliding object is a laser
 
-## 💡New Idea: Mouse Input
-- How is mouse input handled by the computer
-- How can we capture mouse input?
+## 💡New Idea: Physics
+- Newton's three laws of motion can be added to our game engine with:
+  - A RigidBody component (laws 1 and 2: inertia and forces)
+  - Collision Resolution (law 3: equal and opposite reaction)
 
-## 💡New Idea: Gravity
+## 💡New Idea: RigidBody
+- The RigidBody component is a special component that tracks a game object's velocity and acceleration
+- We use this component to also track gravity
+- Every update, acceleration updates velocity
+- Every update, velocity updates position
 
+## 👩‍💻Activity: Code a falling game object with gravity
+- Add a RigidBody component to a game object 
+- Set gravity
+- Watch the simulation
 
-## 👩‍💻Activity: Mouse Input
-- Move a game object using the mouse.
+## 💡New Idea: Collision Resolution
+- When two game objects overlap, we should move them following Newton's third law
+- The separate axis theorem can help us find the minimum transform vector (MTV)
+- We find the axis with the lowest overlap. 
+  - This axis shows us the direction and distance we need to move to resolve a collision
 
-## 💡New Idea: Component/Component Communication
-- Use when two components on the same game object need to communicate
-
-## 💡New Idea: Game Object/Game Object Communication
-- Use when two components in the same scene but different game objects need to communicate
-
-## 💡New Idea: Vector 2 subtraction and magnitude
-
-## 💡New Idea: Tracking the mouse
-- Mouse events
-  - 🛝See slides on Input
-  - mousemove
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-  - mousedown
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mousedown_event
-  - mouseup
-    - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
-- What is the order of the buttons on a mouse?
-
-## 👩‍💻Activity: Create a click-to-destroy game
-
-
-## 🧭Ideas to explore on your own
-- HTML has support for gamepads if one is plugged in. You can explore this if it is your preferred method of input.
-- Should games always follow the exact laws of physics? If not, how should you communicate to your player that the rules are different?
+## 👩‍💻Activity: Add Collision Resolution to a Platformer Game
+- By adding collision resolution to a platformer, our character no longer falls through platforms
+- By checking the objects we are in collision with, we can determine if we can jump.
 
 
 ## [🏁Final Code](https://github.com/cs2510/Fall2025.Day11.Gravity)
@@ -65,8 +58,8 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 
-
-# Day 09 - September 24 - Collisions 2 (🧑‍🏫Lecture)
+![Two cars colliding](collision.jpg)
+# Day 09 - September 24 - Collisions  (🧑‍🏫Lecture)
 
 ## ~~📢Announcements~~n
 
@@ -116,7 +109,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 07 - September 17 - Collisions 1 (🧑‍🏫Lecture)
+# Day 07 - September 17 - Collisions Prep (🧑‍🏫Lecture)
 
 ## ~~📢Announcements~~
 
