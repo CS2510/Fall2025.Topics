@@ -5,25 +5,21 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-# Day 13 - October 8 (🧑‍🏫Lecture)
+![Mouse Banner Image](mouse.jpg)
+# Day 13 - October 8 - Mouse Input (🧑‍🏫Lecture)
 
 ## 💡New Idea: Show Text
 - Explore the `fillText` function
   - Additional information available at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText and https://www.w3schools.com/jsref/canvas_filltext.asp
   - 🛝See slides on fonts
 
-## 💡New Idea: Mouse Input
-- How is mouse input handled by the computer
-- How can we capture mouse input?
-
-## 👩‍💻Activity: Mouse Input
-- Move a game object using the mouse.
-
 ## 💡New Idea: Component/Component Communication
 - Use when two components on the same game object need to communicate
 
 ## 💡New Idea: Game Object/Game Object Communication
 - Use when two components in the same scene but different game objects need to communicate
+
+
 
 ## 💡New Idea: Tracking the mouse
 - Mouse events
@@ -36,18 +32,21 @@ These are the topics we are going to cover in class each day. Links to [example 
     - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseup_event
 - What is the order of the buttons on a mouse?
 
-## 👩‍💻Activity: Create a click-to-destroy game
+## 👩‍💻Activity: Create a Whack-a-Mole Game
+
+## New Idea: Input This Frame
+
+## 💡New Idea: Rotation
 
 
 ## 🧭Ideas to explore on your own
 - HTML has support for gamepads if one is plugged in. You can explore this if it is your preferred method of input.
 - Should games always follow the exact laws of physics? If not, how should you communicate to your player that the rules are different?
 
-## 💡New Idea: Rotation
-
-## New Idea: Input This Frame
-
-
+## [🏁Final Code](https://github.com/cs2510/Fall2025.Day13.MouseInput)
+<br/><br/>
+---
+---
 
 # Day 12 - October 6 (👟Sprint)
 
@@ -58,9 +57,6 @@ These are the topics we are going to cover in class each day. Links to [example 
 <br/><br/>
 ---
 ---
-
-
-https://www.youtube.com/watch?v=jMwksWSsfW4
 
 ![A shuttle launch](shuttle.jpg)
 # Day 11 - October 1 - RigidBody and  Collision Resolution (🧑‍🏫Lecture)
