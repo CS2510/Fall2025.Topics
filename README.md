@@ -13,13 +13,21 @@ These are the topics we are going to cover in class each day. Links to [example 
   - Additional information available at https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillText and https://www.w3schools.com/jsref/canvas_filltext.asp
   - 🛝See slides on fonts
 
+## 👩‍💻Activity: Add Score Text to the Space Shooter Game
+- We can add text to the screen now...
+- ... but we don't have a way to update it, unless we can communicate between game objects...
+
 ## 💡New Idea: Component/Component Communication
 - Use when two components on the same game object need to communicate
+  - If the component you need is a transform, use `this.transform`
+  - If you need another component, use `this.gameObject.getComponent(type)`
 
 ## 💡New Idea: Game Object/Game Object Communication
 - Use when two components in the same scene but different game objects need to communicate
+  - `GameObject.find("Name").transform` or `GameObject.find("Name").getComponent(type)`
 
-
+## 👩‍💻Activity: Update Score Text from Another Game Object
+- When a laser destroys an enemy, find the score game object and update its score controller's score variable.
 
 ## 💡New Idea: Tracking the mouse
 - Mouse events
@@ -33,10 +41,33 @@ These are the topics we are going to cover in class each day. Links to [example 
 - What is the order of the buttons on a mouse?
 
 ## 👩‍💻Activity: Create a Whack-a-Mole Game
+- Create a small polygon that tracks the mouse
+- The the mouse polygon overlaps the "mole", update the score
+- Update the score by finding the score game object (`GameObject.find()`) and then getting the score controller (`.getComponent(ScoreController`).
+- Unfortunately, we score points for every frame that we are holding the mouse down. 
+  - We need a way to know when the mouse button went down and when it came up.
 
-## New Idea: Input This Frame
+## 💡New Idea: Input This Frame
+- We really want to the user to have access to three things:
+  - When a button went down the first time
+  - When the button is down
+  - When the button goes up
+- By creating new arrays that store when buttons go down and up, we can achieve this
+  - We need to clear these arrays each frame.
+
+## 👩‍💻Activity: Fix the Whack-a-Mole Game
+- Update the `onCollisionEnter` function so that it only adds points when the button goes down, is held, or is released.
+- This demonstrates the three events we want the user to have access to
 
 ## 💡New Idea: Rotation
+- We have a rotation variable in our transform, but we never use it.
+- Adding rotation to the `Polygon` component is complex and it is impossible for our new `Text` component.
+- We can use the built-in transform functions on our context
+  - `translate` moves items. See [API for translate](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/translate)
+  - `scale` scales items. See [API for scale](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/scale)
+  - `rotate` rotates items. See [API for rotate](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate)
+- We must clear changes we make so that they don't propagate to other draw calls
+  - We clear changes by calling `save` and `restore`. See [API for save](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/save) and [API for restore](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/restore)
 
 
 ## 🧭Ideas to explore on your own
