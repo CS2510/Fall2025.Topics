@@ -5,6 +5,22 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 14 - October 13 - (👟Sprint)
+
+## 💡New Idea: Rotations in Collisions
+- We can rotate our polygons, but we aren't accounting for that in our collisions
+- If we rotate the polygon points before we do our collisions calculations, everything will line up
+- You can rotate a vector by
+  - Finding the current angle using the arctangent
+  - Adding the rotation
+  - Calculating the x and y coordinates using the sine and cosine functions
+- Never use `atan()`. The function is buggy. Always use `atan2()`.
+  
+<br/><br/>
+---
+---
+
+
 ![Mouse Banner Image](mouse.jpg)
 # Day 13 - October 8 - Mouse Input (🧑‍🏫Lecture)
 
