@@ -5,6 +5,61 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 15 - October 15 - Cameras (🧑‍🏫Lecture)
+
+## 🔙Review
+- Round trip with polar coordinates
+
+
+## 💡New Idea: Games need a camera
+- Camera Game Object
+- Camera Component
+- Camera.main
+- Centering a camera
+- Moving a camera
+  - Lerping a camera
+- Scaling a camera
+
+## 👩‍💻Code Together:
+- Add a camera game object to a game
+- Add a camera component to that game object
+- Move the camera with another game object
+
+
+## 💡New Idea: Layers
+- Default Layer
+- UI Layer
+- Setting Layers in the Game Object constructor
+  
+
+## 🖼️Activity:
+- Look at layers in this clip of [Brawl Stars](https://www.youtube.com/watch?v=F_WaKZJ9B-0)
+- What list of layers would you have in this game?
+
+## 💡New Idea: Assets Class
+- 
+
+## 💡New Idea: Game-specific Properties
+-
+
+## 💡New Idea: Screen to World Coordinates
+-
+
+
+
+
+
+## 🧭Ideas to explore on your own
+- When would a game have multiple cameras?
+- How would you implement multiple cameras in a game?
+
+## 🏁Final Code
+- [The final code for today](https: //github.com/cs2510/Fall2025.Day15.Cameras)
+<br/><br/>
+---
+---
+
+
 # Day 14 - October 13 - (👟Sprint)
 
 ## 💡New Idea: Rotations in Collisions
