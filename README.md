@@ -5,6 +5,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Camera Banner Image](camera.jpg)
 # Day 15 - October 15 - Cameras (🧑‍🏫Lecture)
 
 ## 🔙Review
@@ -17,8 +18,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Camera.main
 - Centering a camera
 - Moving a camera
-  - Lerping a camera
-- Scaling a camera
+ 
 
 ## 👩‍💻Code Together:
 - Add a camera game object to a game
@@ -30,23 +30,21 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Default Layer
 - UI Layer
 - Setting Layers in the Game Object constructor
-  
+
 
 ## 🖼️Activity:
 - Look at layers in this clip of [Brawl Stars](https://www.youtube.com/watch?v=F_WaKZJ9B-0)
 - What list of layers would you have in this game?
 
-## 💡New Idea: Assets Class
-- 
 
 ## 💡New Idea: Game-specific Properties
--
+- Each game has properties that don't belong in a specific scene, game object, or component
+- These include the layers the game will use
 
-## 💡New Idea: Screen to World Coordinates
--
-
-
-
+## 👩‍💻Code Together:
+- Add new layers from the game properties
+- Assign game objects to layers
+- Demonstrate that background game objects are behind foreground objects
 
 
 ## 🧭Ideas to explore on your own
