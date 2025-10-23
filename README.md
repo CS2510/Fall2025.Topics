@@ -5,6 +5,57 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Scene Banner Image](set.jpg)
+# Day 16 - October 22 - Scenes and the Scene Manager (🧑‍🏫Lecture)
+
+## 🖼️Activity: Spaces
+- Review a game that uses mouse input (DOTA 2?). 
+- How does the mouse input get translated to positions in the world for characters to respond to?
+
+## 💡New Idea: Moving backward through spaces
+- Rendering moves us from model space toward screen space
+- Input needs to move backward from screen space toward model space
+  - 🛝See slides on Spaces
+
+## 👩‍💻Code Together: Moving from screen space to world space
+- Reproduce the transforms done to move from camera space to screen space in a DOMMatrix
+- Take the screen point and convert it to a DOMPoint
+- Multiply the inverse of the DOMMatrix by the DOMPoint. 
+  - The resulting point is in world space
+
+## 💡New Idea: Assets
+- Some polygon points are used over and over. 
+- By putting them in an assets class, we can simplify their use.
+
+## 🖼️Activity: Multiple Scenes
+- Review a game that has many scenes (Mario 3?)
+- How do games use scenes to communicate what is needed from the user?
+- How do games use scenes to communicate the feel of the story presented?
+
+## 💡New Idea: SceneManager
+- To help us transition between scenes, we will use a SceneManager class
+   - 🛝See slides on Standard Game Engine Hierarchy
+
+## 👩‍💻Code Together: SceneManager
+- Add a SceneManager class to the engine.
+- Remove references to Engine.currentScene
+- Change our space shooter game so it has multiple scenes
+- Explore ways to transition between scenes
+  - Time
+  - Input
+  - Button click
+
+## 🧭Ideas to explore on your own
+- What other times are there when you need to move backward through spaces?
+- How do you have screen points in 3D worlds?
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day16.Scenes)
+<br/><br/>
+---
+---
+
+
 ![Camera Banner Image](camera.jpg)
 # Day 15 - October 15 - Cameras (🧑‍🏫Lecture)
 
@@ -52,7 +103,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 - How would you implement multiple cameras in a game?
 
 ## 🏁Final Code
-- [The final code for today](https: //github.com/cs2510/Fall2025.Day15.Cameras)
+- [The final code for today](https://github.com/cs2510/Fall2025.Day15.Cameras)
 <br/><br/>
 ---
 ---
