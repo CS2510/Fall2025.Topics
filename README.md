@@ -5,6 +5,79 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 18 - October 29 - Game Object Hierarchy (🧑‍🏫Lecture)
+
+## 🖼️Activity: Game are built using hierarchies
+- Look for game object hierarchies in [Mario Kart 64](https://www.youtube.com/watch?v=w8K-heSWX8s)
+- Look how game object hierarchies are used in [Echoes of Wisdom](https://youtu.be/01onjjAUnOQ?si=_08wHwSa2sMCxuGz&t=123)
+- Look how game object hierarchies are used in [Zero Company](https://www.youtube.com/watch?v=rcxnRaZ6slU)
+
+## 💡New Idea: Game Object Can Have Child Game Objects
+- This create powerful hierarchies
+  - Allows for game objects to "hold" other game objects
+  - Easy alignment of UI
+  - Complex rotational movements
+
+## 👩‍💻Code Together: Game Object Hierarchy
+- Update Transform
+  - setParent
+  - getLocalMatrix
+  - getGlobalMatrix
+- Update GameObject draw
+- Update Collisions
+- Orbiting colliders
+- Aligned Text
+
+## 🧭Ideas to explore on your own
+- 
+
+## 🏁Final Code
+- [The final code for today](https: //github.com/cs2510/Fall2025.Day18.GameObjectHierarchy)
+<br/><br/>
+---
+---
+
+
+# Day 17 - October 27 - (👟Sprint)
+
+## 💡New Idea: Delayed Scene Changes
+- We don't want to change the scene in the middle of an update loop.
+- Instead, we want to update the next time we start a frame in the game loop
+- By tracking the next scene in SceneManager, we can wait to make the change at the appropriate time.
+
+## 👩‍💻Code Together: Update the SceneManager Class
+```diff
+@@ -1,9 +1,16 @@
+ class SceneManager{
+     static currentScene
++    static nextScene
++    static update(){
++        if(SceneManager.nextScene){
++            SceneManager.currentScene = SceneManager.nextScene
++            SceneManager.nextScene = undefined
++        }
++    }
+     static loadScene(scene){
+-        SceneManager.currentScene = scene
++        SceneManager.nextScene = scene
+     }
+-    static getActiveScene(scene){
++    static getActiveScene(){
+         return SceneManager.currentScene
+     }
+ }
+```
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day17.Scenes2)
+
+
+
+<br/><br/>
+---
+---
+
+
 ![Scene Banner Image](set.jpg)
 # Day 16 - October 22 - Scenes and the Scene Manager (🧑‍🏫Lecture)
 
