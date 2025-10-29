@@ -29,10 +29,10 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Aligned Text
 
 ## 🧭Ideas to explore on your own
-- 
+- How can you convert your game to use hierarchies?
 
 ## 🏁Final Code
-- [The final code for today](https: //github.com/cs2510/Fall2025.Day18.GameObjectHierarchy)
+- [The final code for today](https://github.com/cs2510/Fall2025.Day18.GameObjectHierarchy)
 <br/><br/>
 ---
 ---
