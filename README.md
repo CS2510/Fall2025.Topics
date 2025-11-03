@@ -5,6 +5,14 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 19 - November 3 - (👟Sprint)
+<br/><br/>
+---
+---
+
+
+
+
 # Day 18 - October 29 - Game Object Hierarchy (🧑‍🏫Lecture)
 
 ## 🖼️Activity: Game are built using hierarchies
@@ -78,7 +86,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 
-![Scene Banner Image](set.jpg)
+![Scene Banner Image](support/set.jpg)
 # Day 16 - October 22 - Scenes and the Scene Manager (🧑‍🏫Lecture)
 
 ## 🖼️Activity: Spaces
@@ -129,7 +137,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 
-![Camera Banner Image](camera.jpg)
+![Camera Banner Image](support/camera.jpg)
 # Day 15 - October 15 - Cameras (🧑‍🏫Lecture)
 
 ## 🔙Review
@@ -198,7 +206,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 
-![Mouse Banner Image](mouse.jpg)
+![Mouse Banner Image](support/mouse.jpg)
 # Day 13 - October 8 - Mouse Input (🧑‍🏫Lecture)
 
 ## 💡New Idea: Show Text
@@ -282,7 +290,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-![A shuttle launch](shuttle.jpg)
+![A shuttle launch](support/shuttle.jpg)
 # Day 11 - October 1 - RigidBody and  Collision Resolution (🧑‍🏫Lecture)
 
 ## 💡New Idea: Collision Detection Implementation
@@ -333,7 +341,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 
-![Two cars colliding](collision.jpg)
+![Two cars colliding](support/collision.jpg)
 # Day 09 - September 24 - Collisions  (🧑‍🏫Lecture)
 
 ## ~~📢Announcements~~n
@@ -469,7 +477,7 @@ $$ v_1\ dot\ v_2=v_{1x}*v_{2x}+v_{1y}*v_{2y}$$
 ---
 ---
 
-![Compass Banner Image](compass.jpg)
+![Compass Banner Image](support/compass.jpg)
 # Day 05, September 10 - Transforms (🧑‍🏫Lecture)
 
 ## 📢Announcements
@@ -534,7 +542,7 @@ $$ v_1\ dot\ v_2=v_{1x}*v_{2x}+v_{1y}*v_{2y}$$
 <br/><br/>
 ---
 ---
-![Keyboard Banner Image](keyboard.jpg)
+![Keyboard Banner Image](support/keyboard.jpg)
 # Day 04, September 8 - Keyboard Input (🧑‍🏫Lecture)
 
 ## 📢Announcements
@@ -571,7 +579,7 @@ flowchart TD
 <br/><br/>
 ---
 ---
-![Standard Architecture for Games Banner Image](plan.jpg)
+![Standard Architecture for Games Banner Image](support/plan.jpg)
 # Day 03, September 3 - Standard Architecture for Games (🧑‍🏫Lecture)
 
 ## 📢Announcements
@@ -637,7 +645,7 @@ flowchart LR
 ---
 ---
 
-![Game Loop Banner Image](loop.jpg)
+![Game Loop Banner Image](support/loop.jpg)
 # Day 02, August 27 - Game Loop (🧑‍🏫Lecture)
 ## 📢Announcements
 - No class on Monday due to Labor Day
