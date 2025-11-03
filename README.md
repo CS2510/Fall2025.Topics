@@ -12,7 +12,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 
-
+![Banner Image](support/hierarchy.jpg)
 # Day 18 - October 29 - Game Object Hierarchy (🧑‍🏫Lecture)
 
 ## 🖼️Activity: Game are built using hierarchies
