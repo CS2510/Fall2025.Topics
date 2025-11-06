@@ -5,6 +5,67 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Collision Layers Banner Image](/support/layers.jpg)
+# Day 20 - November 6 - Collision Layers, etc. (🧑‍🏫Lecture)
+
+## 🖼️Activity: Why do we play games
+- What motivates us to play games?
+- How does a score affect our desired to play games?
+
+## 💡New Idea: Scene to Scene Communication (Globals)
+- We can store information across scenes with a global class
+- All the global entries should be `static`
+- These globals are an engine-level class
+
+## 💡New Idea: Collisions Raycast
+- There are times when we need to check for collisions between a point and collider, not just collider/collider
+- `Collisions.raycast` takes a point and determines which game object the point is above.
+- This is commonly used when determining what the mouse is hovering over
+
+<!-- Look at Unity's OnMouseDown -->
+
+## 💡New Idea: Collision Layers
+- Not every pair of game objects with a collider needs to be checked for collisions.
+- Collision layers allow us to speed up collision detection
+- Collision layers allow us to prevent certain game objects from interacting that shouldn't be.
+- To use collision layers, we need to add layers to differentiate what game objects can collide.
+- Collision Layers are part of the `GameProperties` 
+  
+## 🖼️Activity: Look for collision layers
+- Review a modern game, such as Hogwarts Legacy
+- Can you guess what collision layers they are using?
+
+## 💡New Idea: Text Alignment
+- We can align text vertically and horizontally
+  
+## 💡New Idea: Cheat Codes
+- We can dramatically speed up debugging if we add cheat codes
+  - Ending a level
+  - Becoming invincible
+
+## 💡New Idea: Tags
+- Currently we can search for game objects by name or filter by layer
+- Tags give us another way to label game objects to make them easier to find. 
+- Tags are member variables on the `GameObject` class.
+
+## 💡New Idea: Time
+- We spend a lot of time tracking time within our components. By expanding the `Time` class, we can simplify our code.
+- `Time.time` tracks the time in seconds since the game started
+- `Time.frames` tracks the number of frames since the game started
+- In order to track this data, we need to update `Time` in our game loop
+
+
+## 🧭Ideas to explore on your own
+- What are other ways to organize your game objects?
+- What are better ways to reduce the speed of collision detection?
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day20-CollisionLayers)
+<br/><br/>
+---
+---
+
+
 # Day 19 - November 3 - (👟Sprint)
 <br/><br/>
 ---
@@ -87,7 +148,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 ![Scene Banner Image](support/set.jpg)
-# Day 16 - October 22 - Scenes and the Scene Manager (🧑‍🏫Lecture)
+# Day 16 - October 22 - Scenes and the Scene Manager, etc.(🧑‍🏫Lecture)
 
 ## 🖼️Activity: Spaces
 - Review a game that uses mouse input (DOTA 2?). 
@@ -207,7 +268,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 
 ![Mouse Banner Image](support/mouse.jpg)
-# Day 13 - October 8 - Mouse Input (🧑‍🏫Lecture)
+# Day 13 - October 8 - Mouse Input, etc. (🧑‍🏫Lecture)
 
 ## 💡New Idea: Show Text
 - Explore the `fillText` function
