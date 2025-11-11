@@ -5,6 +5,20 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 21 - November 21 - (👟Sprint)
+
+## 💡New Idea: Adjusting time based on the actual frame rate
+- We can get the elapsed time from `requestAnimationFrame` calls.
+- By subtracting from the previous time stamp, we can get the correct value for `Time.deltaTime`
+- You can force your game to run slower (to simulate a slower machine) in the performance tab of your browser.
+## 🏁Final Code
+- [The final code for today](https://github.com/CS2510/Fall2025.Day21-Timestamp)
+
+<br/><br/>
+---
+---
+
+
 ![Collision Layers Banner Image](/support/layers.jpg)
 # Day 20 - November 6 - Collision Layers, etc. (🧑‍🏫Lecture)
 
