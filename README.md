@@ -5,6 +5,83 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Collision Layers Banner Image](/support/cookies.jpg)
+# Day 23 - November 17 - Cookies (👟Sprint)
+
+## 💡New Idea: We Can Store Information Across Scenes
+- We can read a persistent cookie with `document.cookie`
+- We can write a persistent cookie with `document.cookie`
+- For cookies with more than one value, we can use json
+  - See [`JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) and [`JSON.parse`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+
+## 💡New Idea: We Can Store Information Across Scenes
+- We can read external files with [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+  - `fetch` uses promises, [an asynchronous concept in javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) and many other languages.
+- If we `fetch` a json file, we can use the data to populate our scenes
+  - For example, [the Tiled open-source map editor](https://www.mapeditor.org/) can export in json.
+
+## 🏁Final Code
+- [The final code for Day 23](https://github.com/CS2510/Fall2025.Day23.Cookies)
+
+Here's what changed in the code:
+```diff
+renamed Day20.html to Day23.html with the following changes:
+ <html>
+ <head>
+-    <title>Day 20 Game</title>
++    <title>Galaxy Guardians Space Shooter Game</title>
+     <style>
+         *{
+             margin: 0;
+
+added file game/data.json
+
+updated game/components/ScoreController.js
+     score = 0
+     update(){
+         this.gameObject.getComponent(Text).text = "Score: " + this.score
+-        if(GameGlobals.highScore < this.score)
++        if(GameGlobals.highScore < this.score){
+             GameGlobals.highScore = this.score
++            document.cookie = GameGlobals.highScore
+         }
+     }
++}
+
+updated game/components/StartSceneController.js
+ class StartSceneController extends Component{
+     start(){
+         this.time = 0
++        //Example of how to use cookies to persist data across sessions
++        if(document.cookie){
++            const score = parseInt(document.cookie)
++            if(score > GameGlobals.highScore)
++                GameGlobals.highScore = score
+         }
++        document.cookie = "" + GameGlobals.highScore
++        //Example of how to read data from an external file
++        fetch("./game/data.json")
++        .then(result=>result.json())
++        .then(json=>console.log(json))
++    }
+     update(){
+         this.time += Time.deltaTime
+```
+
+
+<br/><br/>
+---
+---
+
+
+
+# Day 22 - November 12 - Class Canceled🤧
+
+<br/><br/>
+---
+---
+
+![Collision Layers Banner Image](/support/timer.jpg)
 # Day 21 - November 21 - (👟Sprint)
 
 ## 💡New Idea: Adjusting time based on the actual frame rate
@@ -13,6 +90,37 @@ These are the topics we are going to cover in class each day. Links to [example 
 - You can force your game to run slower (to simulate a slower machine) in the performance tab of your browser.
 ## 🏁Final Code
 - [The final code for today](https://github.com/CS2510/Fall2025.Day21-Timestamp)
+
+Here's what changed in our code:
+```diff
+updated engine/Engine.js
+     static ctx
+     /**
++     * @type {number} The timestamp in milliseconds the last time we got a requestAnimationFrame callback
++     */
++    static lastTimestamp = performance.now()
++    /**
+      * Start the game
+      * @param {GameProperties} gameProperties Optional argument for specific game-specific properties
+      */
+...
+         SceneManager.update()
+         SceneManager.getActiveScene().start()
+-        Engine.gameLoop()
++        requestAnimationFrame(Engine.gameLoop)
+     }
+     /**
+      * Run the game loop. This update the various static classes, then updates the game objects and draw them.
+      */
+-    static gameLoop() {
++    static gameLoop(timestamp) {
++        //Update Time.deltaTime based on the timestamp
++        Time.deltaTime = (timestamp - Engine.lastTimestamp)/1000
++        Engine.lastTimestamp = timestamp
+         SceneManager.update()
+         Engine.update()
+         Engine.draw()
+```
 
 <br/><br/>
 ---
@@ -75,6 +183,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 
 ## 🏁Final Code
 - [The final code for today](https://github.com/cs2510/Fall2025.Day20-CollisionLayers)
+- [A lot changed in the files for Day 20. You can see the differences here.](./diffs/Day18toDay20.md)
 <br/><br/>
 ---
 ---
