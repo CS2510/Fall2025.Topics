@@ -6,6 +6,27 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 
 ![Collision Layers Banner Image](/support/cookies.jpg)
+
+# Day 24 - November 18 - Behavior Trees (🧑‍🏫Lecture)
+
+## 🖼️Activity: Identify behaviors in a game
+- Look at the behaviors of NPCs in [Silk Song](https://www.youtube.com/watch?v=myzGQsKgxfI). Perhaps start at 4:00
+
+## 💡New Idea:
+- 
+
+## 👩‍💻Code Together:
+-
+
+## 🧭Ideas to explore on your own
+- 
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day)
+<br/><br/>
+---
+---
+
 # Day 23 - November 17 - Cookies (👟Sprint)
 
 ## 💡New Idea: We Can Store Information Across Scenes
