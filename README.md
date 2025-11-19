@@ -5,28 +5,56 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
-![Collision Layers Banner Image](/support/cookies.jpg)
-
+![Behavior Tree Banner Image](/support/ai.jpg)
 # Day 24 - November 18 - Behavior Trees (🧑‍🏫Lecture)
 
 ## 🖼️Activity: Identify behaviors in a game
 - Look at the behaviors of NPCs in [Silk Song](https://www.youtube.com/watch?v=myzGQsKgxfI). Perhaps start at 4:00
+- How would you describe how you got to school today to a robot.
 
-## 💡New Idea:
-- 
+## 💡New Idea: Behavior Tree Nodes
+- Simple, self-contained activities
+- Designed to be composed
+- Always return FAILURE, SUCCESS, or RUNNING
+
+## 💡New Idea:➰Repeater Node 
+- Repeats a node when it succeeds or fails
+- A repeater node is a kind of decorator (changes the behavior of another node)
+- Often denote with a loop symbol
+
+## 💡New Idea: Composite Node
+- Controls the flow of multiple nodes
+
+## 💡New Idea➡️Sequence Node (Composite)
+- Runs one task after another failure or all succeed
+- A kind of inversion of a selector node
+- Often denoted as an arrow or and sign
+
+## 💡New Idea:❓Selector (Fallback) Node (Composite)
+- Runs one task after another until success or all fail
+- A kind of inversion of a sequence node
+- Often denoted by a question mark or an or sign
+
+## 💡New Idea:⏩Parallel Node (Composite)
+- Run a foreground task until failure or success
+- Repeat a background task until then
+- Often denoted by a double arrow
+
 
 ## 👩‍💻Code Together:
--
+- Build a Behavior Tree together
 
 ## 🧭Ideas to explore on your own
-- 
+- What other nodes would support games in general
+- What AI can you implement as a behavior tree in your game
 
 ## 🏁Final Code
-- [The final code for today](https://github.com/cs2510/Fall2025.Day)
+- [The final code for today](https://github.com/cs2510/Fall2025.Day24.BehaviorTrees)
 <br/><br/>
 ---
 ---
 
+![Cookies Banner Image](/support/cookies.jpg)
 # Day 23 - November 17 - Cookies (👟Sprint)
 
 ## 💡New Idea: We Can Store Information Across Scenes
