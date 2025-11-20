@@ -502,6 +502,7 @@ updated engine/Engine.js
   - `rotate` rotates items. See [API for rotate](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/rotate)
 - We must clear changes we make so that they don't propagate to other draw calls
   - We clear changes by calling `save` and `restore`. See [API for save](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/save) and [API for restore](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/restore)
+- 🔗Additional information at https://en.wikipedia.org/wiki/Rotation_(mathematics)
 
 
 ## 🧭Ideas to explore on your own
@@ -530,6 +531,7 @@ updated engine/Engine.js
 - Previously we implemented the separate axis theorem
 - Update the game engine so it checks for collisions as part of the game loop
 - When there is an overlap, call `onCollisionEnter` for both game objects
+- 🔗Additional information at https://en.wikipedia.org/wiki/Collision_detection
 
 ## 👩‍💻Activity: Add Collision Detection to our Space Shooter
 - Add `onCollisionEnter` to our enemy ships
@@ -539,12 +541,14 @@ updated engine/Engine.js
 - Newton's three laws of motion can be added to our game engine with:
   - A RigidBody component (laws 1 and 2: inertia and forces)
   - Collision Resolution (law 3: equal and opposite reaction)
+- 🔗Additional information at https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion
 
 ## 💡New Idea: RigidBody
 - The RigidBody component is a special component that tracks a game object's velocity and acceleration
 - We use this component to also track gravity
 - Every update, acceleration updates velocity
 - Every update, velocity updates position
+- 🔗Additional information at https://en.wikipedia.org/wiki/Rigid_body_dynamics
 
 ## 👩‍💻Activity: Code a falling game object with gravity
 - Add a RigidBody component to a game object 
@@ -587,7 +591,8 @@ updated engine/Engine.js
 - Two vectors are orthogonal if their dot product is 0. 
 - This is the same as having a 90 degree angle between them
 - In 2D, the vector (x,y) is orthogonal to (-y, x) and (y, -x)
-- 
+- 🔗Additional information at https://en.wikipedia.org/wiki/Orthogonality
+
 ## 💡New Idea: Collider Components
 - We use collider components to identify which game objects need to have collision detection done
 - In this course the collider component is empty
@@ -605,6 +610,7 @@ updated engine/Engine.js
 - We only need to check a finite number of lines:
   - The lines who tangents are orthogonal to each pair of points in the polygons
 - This algorithm does not work for concave polygons
+- 🔗Additional information at https://en.wikipedia.org/wiki/Hyperplane_separation_theorem
 
 ## 👩‍💻Activity: Code the Separate Axis Theorem
 
@@ -645,6 +651,7 @@ updated engine/Engine.js
 
 ## 💡New Idea: Defining Polygons with Points
 - We don't want to have to create a new component each time we want a polygon of a different shape. If we add a `points` variable to our `Polygon` component, we can loop over those points when we draw. We can also update the points in the `Polygon` in the constructor of a game object, customizing it for each game object.
+- 🔗Additional information at https://en.wikipedia.org/wiki/Polygon
 
 ## 👩‍💻Activity: Using `Polygon` for different shapes
 - Take our space shooter game and change the shape of the objects while using the same `Polygon` component.
@@ -902,6 +909,7 @@ flowchart LR
 
 ## 💡New Idea: Updating our game (Interactive)
 - MVC (Architecture)
+  - 🔗Additional information at https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
 - gameLoop formalization (Architecture)
   - 🔗Additional information at https://m-abdullah-ramees0916.medium.com/the-game-loop-f6f5cb68c00, 
 
@@ -1000,6 +1008,7 @@ flowchart LR
 - Rectangles
 - Arcs
     - Introduction to radians
+    - 🔗Additional information at https://en.wikipedia.org/wiki/Radian
 - Text
   - See slides: Fonts
   - 🔗Additional information at https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text, https://www.w3schools.com/graphics/canvas_text.asp
