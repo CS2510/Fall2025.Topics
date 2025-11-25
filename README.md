@@ -5,6 +5,31 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Events Banner Image](/support/events.jpg)
+# Day 25 - November 24 - Events (👟Sprint)
+
+## 💡New Idea: Events
+- Events provide a way for us to [loosely-couple](https://en.wikipedia.org/wiki/Loose_coupling) components that need to communicate
+- Setting up events requires three steps
+  - Registering an event listener
+  - Firing an event
+  - Handling the event
+
+## 👩‍💻Code Together: Behavior Trees
+- Change the interaction between the enemy component and the score so that it uses events
+- Change the interaction between the button on the start scene so it is loosely coupled.
+
+## 🖼️Activity: Identify events
+- Review a game (for example Donkey Kong Bananza) and discuss where events and loose coupling could be used in the game
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day25.Events)
+
+<br/><br/>
+---
+---
+
+
 ![Behavior Tree Banner Image](/support/ai.jpg)
 # Day 24 - November 18 - Behavior Trees (🧑‍🏫Lecture)
 
@@ -41,7 +66,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 - Often denoted by a double arrow
 
 
-## 👩‍💻Code Together:
+## 👩‍💻Code Together: Behavior Trees
 - Build a Behavior Tree together
 
 ## 🧭Ideas to explore on your own
@@ -131,7 +156,7 @@ updated game/components/StartSceneController.js
 ---
 
 ![Collision Layers Banner Image](/support/timer.jpg)
-# Day 21 - November 21 - (👟Sprint)
+# Day 21 - November 21 - Time (👟Sprint)
 
 ## 💡New Idea: Adjusting time based on the actual frame rate
 - We can get the elapsed time from `requestAnimationFrame` calls.
@@ -423,7 +448,7 @@ updated engine/Engine.js
 ---
 
 
-# Day 14 - October 13 - (👟Sprint)
+# Day 14 - October 13 - Rotations in Collisions (👟Sprint)
 
 ## 💡New Idea: Rotations in Collisions
 - We can rotate our polygons, but we aren't accounting for that in our collisions
@@ -513,7 +538,7 @@ updated engine/Engine.js
 ---
 ---
 
-# Day 12 - October 6 (👟Sprint)
+# Day 12 - October 6 - Platformers (👟Sprint)
 
 ## Ideas for Platformers
 - Be creative. Maybe you can grab the side of walls like in the original [NES Batman Game](https://www.youtube.com/watch?v=jMwksWSsfW4)
