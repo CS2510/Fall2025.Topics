@@ -5,6 +5,61 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 27 - December 3 - Particle Systems (🧑‍🏫Lecture)
+
+## 💡New Idea: Juicing with Particle Systems
+- Particle systems add "juice" to a game in two ways
+  - Providing feedback that something happened. For example, that you swung your sword or that your sword hit something
+  - Providing ambience. For example, the jets on a spaceship
+
+## 🖼️Activity: Identify Particle Systems
+- Look at a game. 
+- Identify the use of particles systems 
+- Identify if the particle systems are use for feedback or ambience
+
+## 💡New Idea: Particle Systems
+- Particle systems are components you add to a game object.
+- Particle systems update and draw a large number of particles without each particle being treated as its own game object
+- Particle Systems have a large number of parameters that are controlled with `distributions`.
+  - Start/end size of particles
+  - Start/end velocity of particles
+  - Start/end color of particles
+  - Start/end alpha of particles
+  - Lifetime of particles
+  - Number of particles created when the system starts
+  - Number of particle created as time passes
+  - and many more we didn't have time to discuss...
+
+## 👩‍💻Code Together: Particle Systems
+- Add a particle system component to the game engine
+- Use the particle system to add explosions to the space shooter game
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day25.ParticleSystems)
+
+
+
+# Day 26 - December 1 - Pause and Time Scaling (👟Sprint)
+
+## 💡New Idea: Pause
+- There are two kinds of pausing in a game
+- System level, where the whole game pauses. 
+  - Consoles let you do this if you push the pause button on a controller.
+  - You can achieve this by not calling update on any game objects in the scene. 
+- Game controlled, where only part of the game pauses
+  - You can achieve this with time scaling.
+
+## 💡New Idea: Time scaling
+- For advanced timing, we can adding a scaling option to our Time object
+  - For example, if you want to pause the game while a menu is being shown, you would scale the time to 0.
+  - As another example, you can scale time up if you want to make a level more difficult.
+
+<br/><br/>
+---
+---
+
+
+
 ![Events Banner Image](/support/events.jpg)
 # Day 25 - November 24 - Events (👟Sprint)
 
@@ -15,7 +70,7 @@ These are the topics we are going to cover in class each day. Links to [example 
   - Firing an event
   - Handling the event
 
-## 👩‍💻Code Together: Behavior Trees
+## 👩‍💻Code Together: Events
 - Change the interaction between the enemy component and the score so that it uses events
 - Change the interaction between the button on the start scene so it is loosely coupled.
 
