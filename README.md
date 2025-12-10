@@ -5,6 +5,37 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+# Day 29 - December 10 - RectTransform and Letter Boxes (🧑‍🏫Lecture)
+
+## 🖼️Activity: Find Letterboxing in games
+- Clash Royale: https://www.youtube.com/watch?v=_hNxfiXmeAE
+- See Zelda at 2:50 in this video: https://www.youtube.com/watch?v=_hNxfiXmeAE
+
+## 💡New Idea: Letter boxes
+- 
+
+## 💡New Idea: RectTransform
+- Look at the layout in MS Word
+- Look at Mario Kart 8 Deluxe: https://www.youtube.com/watch?v=SxeeuUh8R0Q
+
+## 👩‍💻Code Together:
+-
+
+## 🧭Ideas to explore on your own
+- 
+
+## 🏁Final Code
+- [The final code for today](https://github.com/cs2510/Fall2025.Day29.RectTransform)
+<br/><br/>
+---
+---
+
+
+# Day 28 - December 8 - (👟Sprint)
+<br/><br/>
+---
+---
+
 # Day 27 - December 3 - Particle Systems (🧑‍🏫Lecture)
 
 ## 💡New Idea: Juicing with Particle Systems
