@@ -5,6 +5,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Letter Boxing Banner Image](/support/letter-boxing.jpg)
 # Day 29 - December 10 - RectTransform and Letter Boxes (🧑‍🏫Lecture)
 
 ## 🖼️Activity: Find Letterboxing in games
@@ -12,20 +13,36 @@ These are the topics we are going to cover in class each day. Links to [example 
 - See Zelda at 2:50 in this video: https://www.youtube.com/watch?v=_hNxfiXmeAE
 
 ## 💡New Idea: Letter boxes
-- 
+- Letter boxes preserve the aspect ratio of your game 
+- This means it appears the same across all screens
+
+## 👩‍💻Code Together: Letterboxes
+- Add a aspectRatio property to GameProperties
+- Add aspectRatio, effectiveWidth, effectiveHeight, letterBoxSize, and letterBoxType to Engine
+- Determine the kind of letter boxing required
+- Offset the UI appropriately
+- Draw the game
+- Draw the letter boxes
 
 ## 💡New Idea: RectTransform
 - Look at the layout in MS Word
 - Look at Mario Kart 8 Deluxe: https://www.youtube.com/watch?v=SxeeuUh8R0Q
+- Basic Anchors
+- Basic Offset
+- Rectangular Anchors
+- Rectangular Offsets
 
-## 👩‍💻Code Together:
--
-
-## 🧭Ideas to explore on your own
-- 
+## 👩‍💻Code Together: RectTransform
+- Add RectTransform to UI game objects
+- Update Transform getLocalTransform to handle rect transform
+- Handle 
 
 ## 🏁Final Code
 - [The final code for today](https://github.com/cs2510/Fall2025.Day29.RectTransform)
+
+
+<!-- I didn't have time to really cover RectTransform. I felt like I needed a demo that showed how the different configurations worked. -->
+
 <br/><br/>
 ---
 ---
@@ -36,6 +53,7 @@ These are the topics we are going to cover in class each day. Links to [example 
 ---
 ---
 
+![Particle Systems Banner Image](/support/particle-systems.jpg)
 # Day 27 - December 3 - Particle Systems (🧑‍🏫Lecture)
 
 ## 💡New Idea: Juicing with Particle Systems
